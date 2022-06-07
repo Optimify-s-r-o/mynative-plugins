@@ -1,0 +1,19 @@
+{
+  "name": "MyNativeModal",
+  "version": "1.0.0",
+  "source": [
+    {
+      "type": "Context",
+      "source": "./Modal",
+      "file": "ModalProvider.tsx",
+      "exportName": "ModalProvider",
+      "target": "MyNativeGlobalContext"
+    }
+  ],
+  "dependencies": {
+    "@expo/vector-icons": "=13.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "=7.18.2"
+  }
+}
