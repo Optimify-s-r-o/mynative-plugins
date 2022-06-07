@@ -6,16 +6,13 @@ on:
   pull_request:
     branches: [ "main" ]
 
-
   workflow_dispatch:
-
 
 jobs:
 
-  build:
-
+  upload:
+    name: "Upload plugins to AWS S3"
     runs-on: ubuntu-latest
-
 
     steps:
 
