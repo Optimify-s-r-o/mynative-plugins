@@ -21,8 +21,9 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::301399800510:user/MyNativeS3FullAccessAllBuckets
+          role-to-assume: arn:aws:iam::301399800510:role/mynative-plugin
           aws-region: eu-central-1
+          role-session-name: GitHubActions
 
       - name: Copy files to the test website with the AWS CLI
         run: |
